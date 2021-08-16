@@ -201,7 +201,7 @@ background: white;
 color: #24cfa6;
 transition-duration: .5s;
 }
-
+/* 
 aside > ul > li:hover span {
   opacity: 1;
 font-weight: bold;
@@ -209,6 +209,14 @@ color: #a593c2;
 transition-property: opacity, padding-right;
 
   transition-duration: 2s, 5s;
+  transition-delay: 0s, 2s;
+} */
+
+aside > ul > li:hover span {
+  opacity: 1;
+font-weight: bold;
+color: #a593c2;
+transition: opacity 2s 0s, padding-right 5s 2s;
 }
 
 
