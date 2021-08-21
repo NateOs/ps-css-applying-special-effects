@@ -25,12 +25,22 @@ button {
 
 img {border-radius: 1%;}
 
-.logo.load {
-  transform: translate(500px, 100px);
-}
-
 .logo {
   transition: transform 1s;
+}
+
+.load {
+  transform: translate(500px, 100px);
+  animation: 3s spin 1s; 
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 /************
 Nav-bar
