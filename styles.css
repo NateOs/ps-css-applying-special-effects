@@ -31,7 +31,8 @@ img {border-radius: 1%;}
 
 .load {
   transform: translate(500px, 100px);
-  animation: 3s spin 1s; 
+  animation: 3s spin 1s 2 forwards linear; 
+  animation: 3s spin 1s 2 forwards linear; 
 }
 
 @keyframes spin {
@@ -40,6 +41,20 @@ img {border-radius: 1%;}
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* Additional animation  */
+
+@keyframes fade {
+  from {
+opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  to {
+opacity: 0.5;
   }
 }
 /************
